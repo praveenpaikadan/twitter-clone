@@ -1,3 +1,50 @@
 .widgets {
-  flex: 0.25;
+  flex: 0.3;
+  margin-left: 20px;
+  overflow-y: scroll;
+}
+
+.widgets::-webkit-scrollbar {
+  display: none;
+}
+
+.widgets {
+  /*to hide scrollbar for IE and edge*/
+  -ms-overflow-style: none;
+  /*for firefox*/
+  scrollbar-width: none;
+}
+
+.widget__inputContainer {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  padding: 1px 0px 0px;
+}
+
+.widgets__input {
+  display: flex;
+  align-items: center;
+  background-color: var(--twitter-background);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.widgets__input > input {
+  border: none;
+
+  background-color: var(--twitter-background);
+}
+
+.widget__searchIcon {
+  color: gray;
+}
+
+.widgets__widgetContainer {
+  margin-top: 15px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #f5f8fa;
 }
