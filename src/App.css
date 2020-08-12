@@ -3,6 +3,10 @@
   --twitter-background: #e6ecf0;
 }
 
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 .app {
   display: flex;
   height: 100vh;

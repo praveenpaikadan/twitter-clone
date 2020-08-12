@@ -1,4 +1,8 @@
 .feed {
-  flex: 0.4;
+  flex: 0.5;
   border-right: 1px solid var(--twitter-background);
+}
+.feed__homeTag {
+  padding: 10px;
+  border-bottom: 2px solid var(--twitter-background);
 }

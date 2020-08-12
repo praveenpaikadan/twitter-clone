@@ -2,8 +2,8 @@
   display: inline-flex;
   align-items: center;
   cursor: pointer;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .sidebarOption .MuiSvgIcon-root {
@@ -12,7 +12,7 @@
 }
 
 .sidebarOption > h2 {
-  font-weight: 750;
+  font-weight: 780;
   font-size: 20px;
   margin-right: 20px;
 }
