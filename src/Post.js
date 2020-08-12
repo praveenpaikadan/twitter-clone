@@ -7,30 +7,30 @@ import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
 
-const Post = (displayName, userName, verified, text, image, avtar) => {
+const Post = ({ displayName, username, verified, text, image, avatar }) => {
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="" />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Praveen Paikadan
+              {displayName}
               <span>
-                <VerifiedUserIcon className="post__badge" />
+                {verified && <VerifiedUserIcon className="post__badge" />}
               </span>
             </h3>
-            <span className="post__headerSpecial">@paikadan</span>
+            <span className="post__headerSpecial">{username}</span>
           </div>
 
           <div className="post__headerDescription">
-            <p> This is a dummy account for testing twitter-clone </p>
+            <p> {text} </p>
           </div>
         </div>
 
-        <img src="https://media.giphy.com/media/6qdKZFhT0VBm0/giphy.gif" />
+        <img src={image} />
 
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize="small" />
