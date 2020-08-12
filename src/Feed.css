@@ -1,8 +1,32 @@
 .feed {
   flex: 0.5;
   border-right: 1px solid var(--twitter-background);
+  min-width: fit-content;
+  overflow-y: scroll;
 }
-.feed__homeTag {
-  padding: 10px;
-  border-bottom: 2px solid var(--twitter-background);
+
+/*to hide scrollbar for chrome safari opera*/
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+.feed {
+  /*to hide scrollbar for IE and edge*/
+  -ms-overflow-style: none;
+  /*for firefox*/
+  scrollbar-width: none;
+}
+
+.feed__header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--twitter-background);
+}
+
+.feed__header > h2 {
+  font-size: 20px;
+  font-weight: 800;
 }
