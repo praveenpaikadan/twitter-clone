@@ -4,9 +4,13 @@ import { Icon } from "@material-ui/core";
 
 const SidebarOption = (props) => {
   return (
-    <div className={`sidebarOption ${props.active && "sidebarOption--active"}`}>
-      <props.icon />
-      <h2>{props.text}</h2>
+    <div className="sidebarOption-container">
+      <div
+        className={`sidebarOption ${props.active && "sidebarOption--active"}`}
+      >
+        <props.icon />
+        <h2>{props.text}</h2>
+      </div>
     </div>
   );
 };
