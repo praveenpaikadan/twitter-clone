@@ -48,3 +48,16 @@
   padding: 15px;
   background-color: #f5f8fa;
 }
+
+@media only screen and (max-width: 1280px) {
+  .widgets {
+    flex: 0.35;
+  }
+}
+
+@media only screen and (max-width: 1005px) {
+  .widgets {
+    flex: 0;
+    display: none;
+  }
+}

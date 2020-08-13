@@ -3,6 +3,11 @@
   align-items: flex-start;
   border-bottom: 1px solid var(--twitter-background);
   padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.post:hover {
+  background-color: #f5f8fa;
 }
 
 .post__avatar {
@@ -41,11 +46,15 @@
 
 .post__headerDescription {
   font-size: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
 }
+
 .post__body {
   flex: 1;
   padding: 10px;
   padding-left: 0;
+  width: min-content;
 }
 .post__body > img {
   border-radius: 20px;

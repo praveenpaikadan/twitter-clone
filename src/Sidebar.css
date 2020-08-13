@@ -36,3 +36,22 @@
   margin-top: 20px !important;
   border-radius: 30px !important;
 }
+
+@media only screen and (max-width: 1280px) {
+  .sidebar {
+    flex: 0.05;
+    min-width: 50px;
+  }
+
+  .sidebar__tweet {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .sidebar {
+    display: none;
+    flex: 0;
+    min-width: 0;
+  }
+}
